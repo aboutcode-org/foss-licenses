@@ -15,7 +15,7 @@ jobs:
         python-version: ['3.10', '3.11']
 
     steps:
-    - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
     - name: Check licenses
       run: |
         make check_license_files
@@ -67,7 +67,7 @@ jobs:
       contents: write # Required to push a commit
       pull-requests: write # Required to create a pull request
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
 
       # Something to generate files
       - run: |
